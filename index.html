@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script src="https://kit.fontawesome.com/cb4f075660.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+    <section id="banner">
+        <div>
+            <h1><i class="fas fa-comments"></i> Formulario de contacto</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="contenedor">
+            <div class="contact-form">
+                <h3 class="logo"><i class="fas fa-diagnoses"></i> Contactanos</h3>
+                <form action="" id="form">
+                    <p>
+                        <label>Nombre: </label>
+                        <input id="name" name="name" placeholder="Ingrese su nombre" size="35">
+                    </p>
+                    <p>
+                        <label>Email:</label>
+                        <input id="email" type="email" name="email" placeholder="Ingrese su Email" size="35">
+                    </p>
+                    <p>
+                        <label for="">Mensaje: </label>
+                        <textarea name="message" cols="35" rows="10" id="message"></textarea>
+                    </p>
+                    <p>
+                        <button onclick="getData()"><i class="fas fa-paper-plane" type="button"> Enviar</i></button>
+                    </p>
+                    <p>
+                        <button onclick="cleanData()"><i class="fas fa-eraser" type="button"></i>Limpiar Campos</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <section>
+        <div id="piePagina">
+            <h5>Taller sofka</h5>
+            <p>Taller final de HTML, CSS3 y javascript Por Juan Carlos Gomez</p>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>

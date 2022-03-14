@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: #171f3f;
+    font-family: "Fira Sans", sans-serif;
+    color: #ffff;
+    padding: 0, .5em;
+}
+
+.contenedor {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.logo {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#banner {
+    border: 1px;
+    background: url(../img/violetBlueNeon.jpg);
+    height: 40px;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3) ;
+}
+
+.contact-form >* {
+    padding:1em ;
+}
+
+.contact-form form{
+    margin: 0;
+    padding: 1em;
+}
+
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    border-bottom: 1px solid coral;
+}
+
+.contact-form form button {
+    background: #7ce981 ;border: 0;
+    text-transform: uppercase;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #ffff;
+    transition: background-color 1s ease-in-out;
+}
+
+
+
+#piePagina {
+    padding: 25px;
+    background: black;
+    text-align: center;
+}
