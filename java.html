@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="https://kit.fontawesome.com/cb4f075660.js" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Portafolio Cantera 1</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenido">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="contenido">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-link"><a href="index.html" class="nav-link ">Inicio</a></li>
+                    <li class="nav-link"><a href="psient.html" class="nav-link">Psient</a></li>
+                    <li class="nav-link"><a href="java.html" class="nav-link active">Java</a></li>
+                    <li class="nav-link"><a href="html.html" class="nav-link">html</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1>Talleres JAVA</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="card bg-light p3 text-center">
+                    <picture>
+                        <img src="img/java.png" alt="" width= 90%>
+                        <ol>
+                            <li>Metodo Main</li>
+                            <li>Taller de impresion de variables</li>
+                            <li>Taller de condicionales</li>
+                            <li>Taller de ciclos</li>
+                            <li>Taller de arreglos</li>
+
+                        </ol>
+                    </picture>
+                </div>
+            </div>
+            <section class="col-lg-8 text-s">
+                <div class="accordion" id="acordeon">
+                    <div class="accordion-item">
+                        <h2 class="acordion-header" id="titulo1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contenido1">
+                                Metodo Main
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="contenido1" class="accordion-collapse collapse " data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <div class="container-fluid">
+                                <p>
+                                    <a href="#seccionColapsable1" class="btn btn-primary" data-bs-toggle="collapse"
+                                        role="button" aria-expanded="false" aria-controls="#seccionColapsable1">
+                                       Main ( )
+                                    </a>
+                                </p>
+                                <div class="collapse" id="seccionColapsable1">
+                                    <div class="card card-body">
+                                        <pre>
+                                            <code>import com.sofka.Taller1.*;
+                                                import com.sofka.Taller2.*;
+                                                import com.sofka.Taller3.*;
+                                                import com.sofka.Taller4.Arreglos1;
+                                                import com.sofka.Taller4.Arreglos3;
+                                                import com.sofka.Taller4.Arreglos4;
+                                                import com.sofka.Taller4.Arreglos5;
+                                                
+                                                import java.util.Scanner;
+                                                
+                                                
+                                                public class Main {
+                                                
+                                                    public static void main(String[] args) {
+                                                
+                                                        Scanner leer = new Scanner(System.in);
+                                                // Taller #1
+                                                        Punto1 p1 = new Punto1();
+                                                        Punto2 p2 = new Punto2();
+                                                        Punto3 p3 = new Punto3();
+                                                        Punto4 p4 = new Punto4();
+                                                        Punto5 p5 = new Punto5();
+                                                //  Taller #2
+                                                        Condicionales1 c1 = new Condicionales1();
+                                                        Condicionales4 c4 = new Condicionales4();
+                                                        Condicionales5 c5 = new Condicionales5();
+                                                        Condicionales6 c6 = new Condicionales6();
+                                                        Condicionales7 c7 = new Condicionales7();
+                                                        Condicionales8 c8 = new Condicionales8();
+                                                        Condicionales9 c9 = new Condicionales9();
+                                                        Condicionales10 c10 = new Condicionales10();
+                                                
+                                                //        Taller # 3
+                                                        Ciclos1 ciclo1 = new Ciclos1();
+                                                        Ciclos4 ciclos4 = new Ciclos4();
+                                                        Ciclos5 ciclo5 = new Ciclos5();
+                                                        Ciclos6 ciclo6 = new Ciclos6();
+                                                        Ciclos7 ciclos7 = new Ciclos7();
+                                                        Ciclos8 ciclos8 = new Ciclos8();
+                                                
+                                                //        Taller # 4
+                                                        Arreglos1 arr1 = new Arreglos1();
+                                                        Arreglos3 arr3 = new Arreglos3();
+                                                        Arreglos4 arr4 = new Arreglos4();
+                                                        Arreglos5 arr5 = new Arreglos5();
+                                                
+                                                        int opcion, opcion2, opcion3, opcion4, opcion5;
+                                                
+                                                
+                                                        do {
+                                                            System.out.println("----------------------------------------------------------------------------------");
+                                                            System.out.printf("Seleccione el taller que desea ver: \n");
+                                                            System.out.println("1. Taller variables e impresión");
+                                                            System.out.println("2. Taller condicionales");
+                                                            System.out.println("3. Taller de ciclos");
+                                                            System.out.println("4. Taller de arreglos");
+                                                            System.out.println("5. Salir");
+                                                            System.out.println("----------------------------------------------------------------------------------");
+                                                
+                                                            opcion = Integer.parseInt(leer.nextLine());
+                                                
+                                                            switch (opcion){
+                                                                case 1:
+                                                
+                                                                    System.out.println("Seleccionó el taller # 1: ");
+                                                                    do {
+                                                                        System.out.println("Seleccione el punto del taller: ");
+                                                                        System.out.println("1. Punto (1)");
+                                                                        System.out.println("2. Punto (2)");
+                                                                        System.out.println("3. Punto (3)");
+                                                                        System.out.println("4. Punto (4)");
+                                                                        System.out.println("5. Punto (5)");
+                                                                        System.out.println("6...Volver...");
+                                                
+                                                                        opcion2 = Integer.parseInt(leer.nextLine());
+                                                
+                                                                        switch (opcion2){
+                                                                            case 1:
+                                                                                p1.Punto1();
+                                                                                break;
+                                                                            case 2:
+                                                                                p2.Punto2();
+                                                                                break;
+                                                                            case 3:
+                                                                                p3.Punto3();
+                                                                                break;
+                                                                            case 4:
+                                                                                p4.Punto4();
+                                                                                break;
+                                                                            case 5:
+                                                                                p5.Punto5();
+                                                                                break;
+                                                                            case 6:
+                                                                                System.out.println("...Volviendo al menu anterior...");
+                                                                                break;
+                                                                            default:
+                                                                                System.out.println("Opcion incorrecta");
+                                                                        }
+                                                                    }while(opcion2!=6);
+                                                                    break;
+                                                
+                                                                case 2:
+                                                                    do {
+                                                                        System.out.println("Seleccionó el taller # 2: ");
+                                                                        for (int i = 1; i< 11; i++ ){
+                                                                            System.out.println( i+".) Punto");
+                                                                        }
+                                                                        System.out.println("11.) volver");
+                                                                        opcion3 = Integer.parseInt(leer.nextLine());
+                                                
+                                                                        switch (opcion3){
+                                                                            case 1:
+                                                                                c1.Condicionales1();
+                                                                                break;
+                                                                            case 2:
+                                                                                c1.Condicionales2();
+                                                                                break;
+                                                                            case 3:
+                                                                                c1.Condicionales3();
+                                                                                break;
+                                                                            case 4:
+                                                                                c4.alquilarPelicula();
+                                                                                break;
+                                                                            case 5:
+                                                                                c5.farmacia();
+                                                                                break;
+                                                                            case 6:
+                                                                                c6.tallerMotos();
+                                                                                break;
+                                                                            case 7:
+                                                                                c7.IMC();
+                                                                                break;
+                                                                            case 8:
+                                                                                c8.p8();
+                                                                                break;
+                                                                            case 9:
+                                                                                c9.figuras();
+                                                                                break;
+                                                                            case 10:
+                                                                                c10.p10();
+                                                                                break;
+                                                                            case 11:
+                                                                                System.out.println("...volver...");
+                                                                                break;
+                                                                            default:
+                                                                                System.out.println("Opcion incorrecta");
+                                                                        }
+                                                                    }while(opcion3 !=11);
+                                                
+                                                                    break;
+                                                                case 3:
+                                                                    do {
+                                                                        System.out.println("Seleccionó el taller # 3: ");
+                                                                        for (int i = 1; i< 9; i++ ){
+                                                                            System.out.println(i+".) Punto " +i);
+                                                                        }
+                                                                        System.out.println("9.) Volver");
+                                                                        opcion4 = Integer.parseInt(leer.nextLine());
+                                                
+                                                                        switch (opcion4){
+                                                                            case 1:
+                                                                                ciclo1.p1();
+                                                                                break;
+                                                                            case 2:
+                                                                                ciclo1.p2();
+                                                                                break;
+                                                                            case 3:
+                                                                                ciclo1.p3();
+                                                                                break;
+                                                                            case 4:
+                                                                                ciclos4.tabla();
+                                                                                break;
+                                                                            case 5:
+                                                                                ciclo5.menu();
+                                                                                break;
+                                                                            case 6:
+                                                                                ciclo6.aplicacion();
+                                                                                break;
+                                                                            case 7:
+                                                                                ciclos7.parqueadero();
+                                                                                break;
+                                                                            case 8:
+                                                                                ciclos8.escuela();
+                                                                                break;
+                                                                            case 9:
+                                                                                System.out.println("...volver...");
+                                                                                break;
+                                                                        }
+                                                                    }while(opcion4 != 9);
+                                                
+                                                                    break;
+                                                                case 4:
+                                                                    do {
+                                                                        System.out.println("Seleccionó el taller # 4");
+                                                                        System.out.println("Elija el punto que desea ver: ");
+                                                
+                                                                        for (int i = 1; i< 6; i++ ){
+                                                                            System.out.println(i+". Punto ("+i+")");
+                                                                        }
+                                                                        System.out.println("6. volver");
+                                                                        opcion5 = Integer.parseInt(leer.nextLine());
+                                                                        switch (opcion5){
+                                                                            case 1:
+                                                                                arr1.arreglos1();
+                                                                                break;
+                                                                            case 2:
+                                                                                arr1.arreglos2();
+                                                                                break;
+                                                                            case 3:
+                                                                                arr3.arreglos3();
+                                                                                break;
+                                                                            case 4:
+                                                                                arr4.p4();
+                                                                                break;
+                                                                            case 5:
+                                                                                arr5.p5();
+                                                                                break;
+                                                                            case 6:
+                                                                                System.out.println("...volver...");
+                                                                                break;
+                                                                            default:
+                                                                                System.out.println("Opcion incorrecta, favor verifique");
+                                                                        }
+                                                                    }while(opcion5 !=6);
+                                                                    break;
+                                                                case 5:
+                                                                    System.out.println("....Saliendo...");
+                                                                    break;
+                                                            }
+                                                
+                                                        }while (opcion != 5);
+                                                    }
+                                                }</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="acordion-header" id="titulo2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contenido2">
+                                Taller de impresion de variables
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="contenido2" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <p>
+                                <a href="#seccionColapsable12" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable12">
+                                    1. taller 1
+                                </a>
+                                <a href="#seccionColapsable22" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable22">
+                                    2. taller 1
+                                </a>
+                                <a href="#seccionColapsable32" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable32">
+                                    3. taller 1
+                                </a>
+                                <a href="#seccionColapsable42" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable42">
+                                    4. taller 1
+                                </a>
+                                <a href="#seccionColapsable52" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable52">
+                                    5. taller 1
+                                </a>
+                            </p>
+
+                            <div class="collapse" id="seccionColapsable12">
+                                <div class="card card-body">
+                                    <p>1. Realizar un programa el cual solicite su nombre y apellidos.</p>
+                                    <pre>
+                                        <code>import java.util.Scanner;
+
+                                            public class Punto1 {
+                                                String nombre;
+                                                String apellido;
+                                                Scanner leer = new Scanner(System.in);
+                                                public Punto1() {
+                                                }
+                                            
+                                                public void Punto1(){
+                                            
+                                                    System.out.println("Ingrese su nombre: ");
+                                                    nombre = leer.nextLine();
+                                                    System.out.println("Ingrese su apellido: ");
+                                                    apellido = leer.nextLine();
+                                                }
+                                            
+                                            }
+                                            </code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable22">
+                                <div class="card card-body">
+                                    <p>2. Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.</p>
+                                    <pre>
+                                        <code>import java.util.Scanner;
+
+                                            public class Punto2 {
+                                                String nombre;
+                                                String apellido;
+                                                int edad;
+                                                Scanner leer = new Scanner(System.in);
+                                                public Punto2() { }
+                                            
+                                                public void Punto2(){
+                                            
+                                                    System.out.println("Ingrese su nombre: ");
+                                                    nombre = leer.nextLine();
+                                                    System.out.println("Ingrese su apellido: ");
+                                                    apellido = leer.nextLine();
+                                                    System.out.println("Ingrese su edad: ");
+                                                    edad = leer.nextInt();
+                                            
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="seccionColapsable32">
+                                <div class="card card-body">
+                                    <p>3. Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre].</p>
+                                    <pre>
+                                        <code>import java.util.Scanner;
+
+                                            public class Punto3 {
+                                            
+                                                String nombre, nombrePadre, nombreMadre;
+                                                String apellido, apellidoPadre, apellidoMadre;
+                                            
+                                                Scanner leer = new Scanner(System.in);
+                                            
+                                                public Punto3() { }
+                                            
+                                                public void Punto3(){
+                                            
+                                                    System.out.println("Ingrese su nombre: ");
+                                                    nombre = leer.nextLine();
+                                                    System.out.println("Ingrese su apellido: ");
+                                                    apellido = leer.nextLine();
+                                            
+                                                    System.out.println("Ingrese el nombre de su padre: ");
+                                                    nombrePadre = leer.nextLine();
+                                                    System.out.println("Ingrese el apellido de su padre: ");
+                                                    apellidoPadre = leer.nextLine();
+                                            
+                                                    System.out.println("Ingrese el nombre de su madre: ");
+                                                    nombreMadre = leer.nextLine();
+                                                    System.out.println("Ingrese el apellido de su madre: ");
+                                                    apellidoMadre = leer.nextLine();
+                                            
+                                                    System.out.println("Yo "+ nombre+ " "+apellido+" soy hijo de "+ nombreMadre+" "+apellidoMadre+ " y "+nombrePadre+" "+ apellidoPadre);
+                                                    System.out.println("------------------------------------------------------------------------------------------------------------------");
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="seccionColapsable42">
+                                <div class="card card-body">
+                                    <p>4. Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País]</p>
+                                    <pre>
+                                        <code>import java.util.Scanner;
+
+                                            public class Punto4 {
+                                                String cuidad;
+                                                String pais;
+                                                Scanner leer = new Scanner(System.in);
+                                            
+                                                public Punto4() { }
+                                            
+                                                public void Punto4(){
+                                                    System.out.println("Ingrese un país: ");
+                                                    pais = leer.nextLine();
+                                                    System.out.println("Ingrese la capital del país");
+                                                    cuidad = leer.nextLine();
+                                            
+                                                    System.out.println("La ciudad "+ cuidad+ " es la capital del país "+pais);
+                                                    System.out.println("------------------------------------------------------------");
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="seccionColapsable52">
+                                <div class="card card-body">
+                                    <p>5. Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a).</p>
+                                    <pre>
+                                        <code>import java.util.Scanner;
+
+                                            public class Punto5 {
+                                                String nombreMascota, tipoMascota, nombre;
+                                                int edadMascota;
+                                                Scanner leer = new Scanner(System.in);
+                                            
+                                                public Punto5() { }
+                                            
+                                                public void Punto5(){
+                                                    System.out.println("Ingrese el nombre de sus mascota: ");
+                                                    nombreMascota = leer.nextLine();
+                                                    System.out.println("Ingrese el tipo de mascota: ");
+                                                    tipoMascota = leer.nextLine();
+                                                    System.out.println("Ingrese la edad de su mascota: ");
+                                                    edadMascota = Integer.parseInt( leer.nextLine());
+                                                    System.out.println("Ingrese el nombre del dueño de la mascota: ");
+                                                    nombre = leer.nextLine();
+                                            
+                                            
+                                                    System.out.println(nombreMascota+" es un(a) "+tipoMascota+" , el cual tiene \n "+edadMascota+" años de edad y "+nombre+" es actualmente su dueño(a)");
+                                                    System.out.println("------------------------------------------------------------------------------------------------------");
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="accordion-item">
+                        <h2 class="acordion-header" id="titulo3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contenido3">
+                                Taller de condicionales
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="contenido3" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <p>
+                                <a href="#seccionColapsable13" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable13">
+                                    1. taller 2
+                                </a>
+                                <a href="#seccionColapsable23" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable23">
+                                    2. taller 2
+                                </a>
+                                <a href="#seccionColapsable33" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable33">
+                                    3. taller 2
+                                </a>
+                                <a href="#seccionColapsable43" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable43">
+                                    4. taller 2
+                                </a>
+                                <a href="#seccionColapsable53" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable53">
+                                    5. taller 2
+                                </a>
+                                <a href="#seccionColapsable63" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable63">
+                                    6. taller 2
+                                </a>
+                                <a href="#seccionColapsable73" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable73">
+                                    7. taller 2
+                                </a>
+                                <a href="#seccionColapsable83" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable83">
+                                    8. taller 2
+                                </a>
+                                <a href="#seccionColapsable93" class="btn btn-primary" data-bs-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="#seccionColapsable93">
+                                9. taller 2
+                            </a>
+                            <a href="#seccionColapsable103" class="btn btn-primary" data-bs-toggle="collapse"
+                            role="button" aria-expanded="false" aria-controls="#seccionColapsable103">
+                                10. taller 2
+                            </a>
+                            </p>
+                            <div class="collapse" id="seccionColapsable13">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>1. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es <br> mayor de edad.</p></pre>
+                                    <pre>
+                                        <code>import java.util.Scanner;
+
+                                            public class Condicionales1 {
+                                                int edad;
+                                                String nombre, apellido;
+                                            
+                                                Scanner leer = new Scanner(System.in);
+                                            
+                                                public Condicionales1() { }
+                                            
+                                                public void Condicionales1(){
+                                                    System.out.println("Ingrese su edad: ");
+                                                    edad = leer.nextInt();
+                                            
+                                                    if (edad >= 18){
+                                                        System.out.println("Usted es mayor de edad.");
+                                                    }
+                                                }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable23">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>2. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).</p>
+                                        <code>    public void Condicionales2(){
+                                            System.out.println("Ingrese su edad: ");
+                                            edad = leer.nextInt();
+                                            if (edad < 18){
+                                                System.out.println("Usted es aún un niño(a).");
+                                            }
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="seccionColapsable33">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>3. Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonces se deberá <br>imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años,<br> entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase<br> a su casa.</p></pre>
+                                    <pre>
+                                        <code> public void Condicionales3(){
+                                            System.out.println("Ingrese su nombre: ");
+                                            nombre = leer.nextLine();
+                                    
+                                            System.out.println("Ingrese su apellido: ");
+                                            apellido = leer.nextLine();
+                                    
+                                            System.out.println("Ingrese su edad: ");
+                                            edad = Integer.parseInt(leer.nextLine());
+                                    
+                                            if(edad < 18){
+                                                System.out.println(nombre+" "+apellido+" usted es menor de edad, por lo tanto,\n no puede entrar a la fiesta, por favor devuélvase a su casa.");
+                                            }else {
+                                                System.out.println(nombre+" "+ apellido+ " usted es mayor de edad, por lo tanto puede entrar a la fiesta.");
+                                            }
+                                    
+                                            System.out.println("-----------------------------------------------------------------------------------------------------------------");
+                                    
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable43">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>4. La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita<br> registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar<br> películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños<br> u otra novedad sobre la película.</p>
+                                        <code>import java.util.Scanner;
+
+                                            public class Condicionales4 {
+                                            
+                                             String peliculas[] = {"Pulp Fiction", "El padrino", "La vida es Bella", "El club de la pelea", "Cadena Perpetua", "La lista de Schindler", "Forest Gump"};
+                                             String alquiladas[] = {"disponible","disponible","disponible","disponible","disponible","disponible","disponible"};
+                                             String nombre;
+                                             Scanner leer = new Scanner(System.in);
+                                             int posicionPelicula, opcion, entrega;
+                                            
+                                             
+                                                private void recorrerPeliculas(){
+                                            
+                                                    for(int i = 0; i< peliculas.length;i++){
+                                                        System.out.println((i+1)+". "+peliculas[i]+" Estado: "+alquiladas[i]);
+                                                        }
+                                                }
+                                            
+                                            
+                                                private void ingresarNovedad(){
+                                            
+                                                    System.out.println("Seleccione la pelicula desea entregar: ");
+                                                    recorrerPeliculas();
+                                                    entrega = Integer.parseInt(leer.nextLine());
+                                                    if( alquiladas[entrega-1].equals("alquilada")){
+                                                        alquiladas[entrega-1] = "disponible";
+                                                    }else
+                                                        System.out.println("La pelicula no fue alquilada");
+                                                }
+                                            
+                                                public void alquilarPelicula(){
+                                            
+                                                    do {
+                                            
+                                                        System.out.println("Seleccione la opcion a realizar: ");
+                                                        System.out.println("1. Alquilar pelicula.");
+                                                        System.out.println("2. Consultar peliculas disponibles");
+                                                        System.out.println("3. Ingresar novedades");
+                                                        System.out.println("4. Salir");
+                                                        opcion = Integer.parseInt(leer.nextLine());
+                                            
+                                                        if (opcion == 1) {
+                                            
+                                                                System.out.println("Ingrese el nombre del usuario: ");
+                                                                nombre = leer.nextLine();
+                                            
+                                                                System.out.println("Selecione la pelicula que desea alquilar: ");
+                                            
+                                                                recorrerPeliculas();
+                                            
+                                                                System.out.println("-----------------------------------------------");
+                                            
+                                                                posicionPelicula = Integer.parseInt(leer.nextLine());
+                                            
+                                                                System.out.println("Usuario: "+nombre+"\nPelicula alquilada: " + peliculas[posicionPelicula - 1]);
+                                                                alquiladas[posicionPelicula-1] = "alquilada";
+                                                        }
+                                                        if(opcion ==2 ){
+                                                          recorrerPeliculas();
+                                                          System.out.println("---------------------------------------------");
+                                            
+                                                        }
+                                                        if (opcion == 3){
+                                                            ingresarNovedad();
+                                                        }
+                                                        if(opcion == 4){
+                                                            System.out.println("....Saliendo....");
+                                                            break;
+                                                        }
+                                                        if(opcion <1 || opcion >4){
+                                                            System.out.println("Opcion incorrecta");
+                                                        }
+                                                    }while (opcion !=4);
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable53">
+                                <div class="card card-body">
+                                <pre>
+                                <p>5. La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus<br> clientes y para ello, los productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada<br> cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten.</p>
+                                    <code>import java.text.DecimalFormat;
+                                        import java.util.Scanner;
+                                        
+                                        public class Condicionales5 {
+                                            Scanner leer = new Scanner(System.in);
+                                            String productos[] = {"Alcohol","Algodon", "Acetaminofem","Vendas","Ibuprofeno","Jeringas" };
+                                            int precios[] = {1500,250,350,270,420,190};
+                                            int inventario[] = {5,5,5,5,5,5};
+                                            DecimalFormat formatoMiles = new DecimalFormat("###,###.##");
+                                            int opcion,seleccionProducto,cantidad, total;
+                                        
+                                        
+                                        
+                                            private void mostrarProductos(){
+                                                for (int i = 0; i < productos.length; i++){
+                                                    System.out.println((i+1)+". "+productos[i]+" valor: $"+ formatoMiles.format(precios[i])+" cantidad en inventario: "+inventario[i]);
+                                                }
+                                            }
+                                        
+                                        
+                                            private void comprar(){
+                                                System.out.println("Seleccione el producto que desea comprar: ");
+                                                mostrarProductos();
+                                                seleccionProducto = Integer.parseInt(leer.nextLine());
+                                                    System.out.println("Seleccione la cantidad a comprar: ");
+                                                    cantidad = Integer.parseInt(leer.nextLine());
+                                                    total = precios[seleccionProducto-1] * cantidad;
+                                                    if(cantidad < 1 ) {
+                                                        System.out.println("El producto está agotado");
+                                                    }
+                                                    if(cantidad > inventario[seleccionProducto]){
+                                                        System.out.println("Existen en inventario: "+inventario[seleccionProducto-1]);
+                                                        }else {
+                                                        inventario[seleccionProducto - 1] = inventario[seleccionProducto - 1] - cantidad;
+                                                    }
+                                                    System.out.println("Producto comprado: ");
+                                                    System.out.println(productos[seleccionProducto-1]+" cantidad: "+ cantidad+" valor: $ "+  formatoMiles.format(total));
+                                        
+                                            }
+                                        
+                                            private void devolucion(){
+                                                System.out.println("Seleccione producto a devolver: ");
+                                                mostrarProductos();
+                                                seleccionProducto = Integer.parseInt(leer.nextLine());
+                                                System.out.println("Ingrese la cantidad a devolver: ");
+                                                cantidad = Integer.parseInt(leer.nextLine());
+                                                System.out.println("Devolucion producto: "+productos[seleccionProducto-1]+cantidad);
+                                                inventario[seleccionProducto-1]=inventario[seleccionProducto-1]+1;
+                                                mostrarProductos();
+                                            }
+                                        
+                                            public void farmacia(){
+                                                do {
+                                                    System.out.println("FARAMACIA MI SALUD");
+                                                    System.out.println("1. Comprar");
+                                                    System.out.println("2. Devoluciones");
+                                                    System.out.println("3. Ver Productos");
+                                                    System.out.println("4. Salir");
+                                        
+                                                    opcion = Integer.parseInt(leer.nextLine());
+                                        
+                                                    switch (opcion){
+                                                        case 1:
+                                                            comprar();
+                                                            break;
+                                                        case 2:
+                                                            devolucion();
+                                                            break;
+                                                        case 3:
+                                                            mostrarProductos();
+                                                            break;
+                                                        case 4:
+                                                            System.out.println("...Saliendo...");
+                                                            break;
+                                                    }
+                                        
+                                                }while (opcion!=4);
+                                            }
+                                        }</code>
+                                </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable63">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>6. El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que<br> le permita registrar los servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por<br> parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se<br> requiera inventariar cambios repuestos en la motocicleta al entregarla.</p>
+                                        <code>import java.text.DecimalFormat;
+                                            import java.util.Scanner;
+                                            
+                                            public class Condicionales6 {
+                                            
+                                                DecimalFormat formatoMiles = new DecimalFormat("###,###.##");
+                                                Scanner leer = new Scanner(System.in);
+                                                int opcion, opcion2, puestoEntrega;
+                                                int contar = 0;
+                                                String placa;
+                                                int sumaServicios[] = {12000, 30000, 51000, 21000};
+                                                String modelo, nombrePropietario;
+                                                String modeloMoto[]  = new String[5];
+                                                String placaVehiculos [] = new String[5];
+                                                String propietarios[] = new String[5];
+                                            
+                                            
+                                                private void servicios(){
+                                                    System.out.println("Seleccione los servicios realizados: ");
+                                            
+                                                    System.out.println("1. Ajuste cadena--------------> $12.000");
+                                                    System.out.println("2. Cambio de aceite-----------> $30.000");
+                                                    System.out.println("3. Mantenimiento general------> $51.000");
+                                                    System.out.println("4. Cambio de luces------------> $21.000");
+                                            
+                                                }
+                                            
+                                                private void recorrerMotos(){
+                                                    for(int i =0; i < placaVehiculos.length;i++)
+                                                        if(placaVehiculos[i] != null)
+                                                        System.out.println( (i+1)+". "+" Propietario: "+propietarios[i]+" ****Placa: "+placaVehiculos[i]+" ****Modelo y marca: "+modeloMoto[i]);
+                                                }
+                                            
+                                                private void ingresoMoto(){
+                                            
+                                                    System.out.println("Ingrese el nombre del propietario del vehiculo: ");
+                                                    nombrePropietario = leer.nextLine();
+                                            
+                                                    System.out.println("Ingrese la placa del vehiculo: ");
+                                                    placa = leer.nextLine();
+                                            
+                                                    System.out.println("Ingrese el modelo y marca del vehiculo: ");
+                                                    modelo = leer.nextLine();
+                                            
+                                                    contar++;
+                                                    if(contar == 5 ){
+                                                        System.out.println("El taller no tiene cupo");
+                                                    }
+                                                    placaVehiculos[contar-1] = placa;
+                                                    propietarios[contar-1] = nombrePropietario;
+                                                    modeloMoto[contar-1] = modelo;
+                                            
+                                                }
+                                            
+                                                private void entregaMoto(){
+                                                    System.out.println("Seleccione el puesto del vehiculo: ");
+                                                    recorrerMotos();
+                                                    puestoEntrega = Integer.parseInt(leer.nextLine());
+                                                    System.out.println("Seleccione los servicios realizados al vehiculo: ");
+                                                    servicios();
+                                                    opcion2 = Integer.parseInt(leer.nextLine());
+                                                    System.out.println("Propietario: "+propietarios[puestoEntrega-1]);
+                                                    System.out.println("Vechiculo: "+modeloMoto[puestoEntrega-1]+" Placa: "+placaVehiculos[puestoEntrega-1]);
+                                                    System.out.println("Valor a pagar: $ "+ formatoMiles.format(sumaServicios[opcion2-1]));
+                                                }
+                                            
+                                                public void tallerMotos(){
+                                            
+                                                    do {
+                                                        System.out.println("Taller El Maquinista");
+                                                        System.out.println("Seleccione el tipo de servicio: ");
+                                                        System.out.println("1. Ingreso al taller");
+                                                        System.out.println("2. Entregar motocicleta");
+                                                        System.out.println("3. Ver motos");
+                                                        System.out.println("4. Salir");
+                                            
+                                                        opcion = Integer.parseInt(leer.nextLine());
+                                            
+                                                        switch (opcion){
+                                                            case 1:
+                                                                ingresoMoto();
+                                                                break;
+                                                            case 2:
+                                                                entregaMoto();
+                                                                break;
+                                                            case 3:
+                                                                recorrerMotos();
+                                                                break;
+                                                            case 4:
+                                                                System.out.println("...Saliendo...");
+                                                                break;
+                                                        }
+                                                    }while(opcion !=4);
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable73">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>7. La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en <br>kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y <br>establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).</p>
+                                    <code>import java.text.DecimalFormat;
+                                        import java.util.Scanner;
+                                        
+                                        public class Condicionales7 {
+                                            private Double peso,estatura, total;
+                                            private String nombre;
+                                            Scanner leer = new Scanner(System.in);
+                                            String estado[] = {"Bajo de peso", "Peso normal", "Sobrepeso", "Obeso"};
+                                            DecimalFormat formatoMiles = new DecimalFormat("###,###.##");
+                                        
+                                            private void datos(){
+                                                System.out.println("Ingrese su nombre: ");
+                                                nombre = leer.nextLine();
+                                        
+                                                System.out.println("Ingrese su peso en Kilogramos: ");
+                                                peso = Double.parseDouble(leer.nextLine());
+                                        
+                                                System.out.println("Ingrese su estatura: ");
+                                                estatura = Double.parseDouble(leer.nextLine());
+                                            }
+                                        
+                                            private void calculo(){
+                                                total = peso / Math.pow(estatura,2);
+                                                if(total <= 18.5){
+                                                    System.out.println(nombre+" su IMC es: "+formatoMiles.format(total)+" y su estado es: "+estado[0]);
+                                                }
+                                                if(total > 18.5 && total <= 24.9){
+                                                    System.out.println(nombre+" su IMC es: "+formatoMiles.format(total)+" y su estado es: "+estado[1]);
+                                                }
+                                                if (total >=25.0 && total <=29.0){
+                                                    System.out.println(nombre+" su IMC es: "+formatoMiles.format(total)+ " y su estado es: "+estado[2]);
+                                                }
+                                                if (total >= 30.0){
+                                                    System.out.println(nombre+" su IMC es: "+formatoMiles.format(total)+ " y su estado es: "+estado[3]);
+                                                }
+                                            }
+                                        
+                                            public  void IMC (){
+                                                datos();
+                                                calculo();
+                                        
+                                            }
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable83">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>8. El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto<br> a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación<br> permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.</p>
+                                        <code>//          Tomo como supuesto que Don Carlos siempre arranca inventario con 5 unidades de cada torta que vende, y 2 tortas de cada tipo de separadas para vender en porciones
+                                            //          Tortas que vende Don Carlos:
+                                            //          Torta de chocolate p1: $ 1.400 ---->$175/porcion
+                                            //          Torta de fresa p2: $ 1.000 ----> $ 125 /porcion
+                                            //          Torta de tres leches p3: $ 1.200 ---> $ 300 / Porción
+                                            //          Valor decoracion = $ 250
+                                            //          Porciones: Torta de chocolate: 8, Torta de fresa: 8, torta de tres leches: 4
+                                            
+                                            
+                                            import java.text.DecimalFormat;
+                                            import java.util.Scanner;
+                                            
+                                            public class Condicionales8 {
+                                            
+                                                DecimalFormat formatoMiles = new DecimalFormat("###,###.##");
+                                                Scanner leer = new Scanner(System.in);
+                                                String tipoTorta[] = {"Tota de chocolate", "Torta de fresa", "Torta de de tres leches"};
+                                                int valorTortas[] = {1400, 1000, 1200};
+                                                int valorPorciones[] = {175, 300, 250};
+                                                int cantidadTortas[] = {5, 5, 5};
+                                                int cantidadPorciones[]= {16, 16, 8};
+                                                int opcion, cantidad, completo, seleccionTorta;
+                                            
+                                            
+                                                private void verTortas(){
+                                                    for(int i =0; i<=2;i++){
+                                                        System.out.println(tipoTorta[i]+" Valor: $"+formatoMiles.format(valorTortas[i])+" Cantidad: "+cantidadTortas[i]+" Cantidad de porciones: "+cantidadPorciones[i]);
+                                                    }
+                                                }
+                                            
+                                                private void comprar(){
+                                                    System.out.println("Seleccione la opcion de compra: ");
+                                                    System.out.println("1. Producto completo");
+                                                    System.out.println("2. Prodcuto en porciones");
+                                            
+                                                    completo = Integer.parseInt(leer.nextLine());
+                                            
+                                                    if(completo == 1){
+                                                        System.out.println("Seleccione la torta que desea comprar: ");
+                                                        System.out.println("1. Torta Chocolate");
+                                                        System.out.println("2. Torta de fresa");
+                                                        System.out.println("3. Tres leches");
+                                            
+                                                        seleccionTorta = Integer.parseInt(leer.nextLine());
+                                            
+                                                        System.out.println("Cantidad de tortas a comprar: ");
+                                                        cantidad = Integer.parseInt(leer.nextLine());
+                                            
+                                                        if(cantidad < cantidadTortas[seleccionTorta-1]){
+                                                            System.out.println("Valor de la compra: $"+formatoMiles.format(valorTortas[seleccionTorta-1]*cantidad)+" Torta comprada: "+tipoTorta[seleccionTorta-1]);
+                                                            cantidadTortas[seleccionTorta-1]= cantidadTortas[seleccionTorta-1]-cantidad;
+                                                        }else
+                                                            System.out.println("La cantidad de tortas en inventario es inferior a la cantidad que desea comprar.");
+                                                    }
+                                            
+                                                    if(completo == 2){
+                                                        System.out.println("Seleccione la porcion de la torta que desea comprar: ");
+                                                        System.out.println("1. Torta Chocolate");
+                                                        System.out.println("2. Torta de fresa");
+                                                        System.out.println("3. Tres leches");
+                                            
+                                                        seleccionTorta = Integer.parseInt(leer.nextLine());
+                                            
+                                                        System.out.println("Cantidad de tortas a comprar: ");
+                                                        cantidad = Integer.parseInt(leer.nextLine());
+                                            
+                                                        if(cantidad < cantidadTortas[seleccionTorta-1]){
+                                                            System.out.println("Valor de la compra: $"+formatoMiles.format(valorTortas[seleccionTorta-1]*cantidad)+" Torta comprada: "+tipoTorta[seleccionTorta-1]);
+                                                            cantidadPorciones[seleccionTorta-1]= cantidadPorciones[seleccionTorta-1]-cantidad;
+                                                        }else
+                                                            System.out.println("La cantidad de tortas en inventario es inferior a la cantidad que desea comprar.");
+                                                    }
+                                                }
+                                            
+                                                public void p8(){
+                                                    do {
+                                                        System.out.println("1. Ingresar pedido");
+                                                        System.out.println("2. Ver tortas disponibles");
+                                                        System.out.println("3. Salir");
+                                            
+                                                        opcion = Integer.parseInt(leer.nextLine());
+                                            
+                                                        switch (opcion){
+                                                            case 1:
+                                                                comprar();
+                                                                break;
+                                                            case 2:
+                                                                verTortas();
+                                                                break;
+                                                            case 3:
+                                                                System.out.println("...Saliendo...");
+                                                                break;
+                                                            default:
+                                                                System.out.println("Opcion incorrecta");
+                                                        }
+                                            
+                                                    }while(opcion !=3);
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable93">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>9. El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere<br> una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular <br>el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado.</p>
+                                        <code>import java.util.Scanner;
+
+                                            public class Condicionales9 {
+                                                Double baseTriangulo, alturaTriangulo, ladoA, ladoB, baseMayor, baseMenor, alturaTrapecio;
+                                                Double areaTriangulo, areaCuadrado, areaTrapecio;
+                                                Scanner leer = new Scanner(System.in);
+                                                int opciones;
+                                            
+                                                private void calculoTringulo(){
+                                            
+                                                    System.out.println("Ingrese la base del triangulo: ");
+                                                    baseTriangulo = Double.parseDouble(leer.nextLine());
+                                            
+                                                    System.out.println("Ingrese la altura del triangulo: ");
+                                                    alturaTriangulo = Double.parseDouble(leer.nextLine());
+                                            
+                                                    areaTriangulo = (baseTriangulo*alturaTriangulo)/2;
+                                                    System.out.println("El area del triangulo es: "+areaTriangulo);
+                                                }
+                                            
+                                                private void calculoCuadro(){
+                                                    System.out.println("Ingrese el lado A del rectangulo: ");
+                                                    ladoA = Double.parseDouble(leer.nextLine());
+                                            
+                                                    System.out.println("Ingrese el lado B del rectangulo: ");
+                                                    ladoB = Double.parseDouble(leer.nextLine());
+                                            
+                                                    areaCuadrado = ladoA * ladoB;
+                                                    System.out.println("El area de recttangulo es: "+ areaCuadrado);
+                                                }
+                                            
+                                                private void caluloTrapecio(){
+                                                    System.out.println("Ingrese la base mayor del trapecio: ");
+                                                    baseMayor = Double.parseDouble(leer.nextLine());
+                                            
+                                                    System.out.println("Ingrese la base menor del trapecio: ");
+                                                    baseMenor = Double.parseDouble(leer.nextLine());
+                                            
+                                                    System.out.println("Ingrese la altura del trapecio: ");
+                                                    alturaTrapecio = Double.parseDouble(leer.nextLine());
+                                                    areaTrapecio = ((baseMayor+baseMenor)*alturaTrapecio)/2;
+                                                    System.out.println("El area del trapecio es: "+areaTrapecio);
+                                                }
+                                            
+                                                public void figuras(){
+                                                    do {
+                                                        System.out.println("Seleccione la figura que le desea calcula su area: ");
+                                                        System.out.println("1. Area tringulo");
+                                                        System.out.println("2. Area cuadrado");
+                                                        System.out.println("3. Area trapecio");
+                                                        System.out.println("4. Salir");
+                                            
+                                                        opciones = Integer.parseInt(leer.nextLine());
+                                            
+                                                        switch (opciones){
+                                                            case 1:
+                                                                calculoTringulo();
+                                                            break;
+                                                            case 2:
+                                                                calculoCuadro();
+                                                                break;
+                                                            case 3:
+                                                                caluloTrapecio();
+                                                                break;
+                                                            case 4:
+                                                                System.out.println("...Saliendo...");
+                                                                break;
+                                                            default:
+                                                                System.out.println("Opción incorrecta");
+                                                        }
+                                            
+                                                    }while (opciones != 4);
+                                                }
+                                            }</code>
+                                            </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable103">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>10. El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; <br> por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros<br> o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta.</p>
+                                        <code>import java.text.DecimalFormat;
+                                            import java.util.Scanner;
+                                            
+                                            public class Condicionales10 {
+                                            
+                                                DecimalFormat formatoMiles = new DecimalFormat("###,###.##");
+                                                String clientes[] = {"Maria Sanchez", "Juan gomez", "Bruno Diaz", "Ricardo Tapias"};
+                                                int opcion, deposito,retiro, idUsuario, nuevoSaldo;
+                                                int saldoUsuarios[] = {500000, 250000, 750000, 310000};
+                                                Scanner leer = new Scanner(System.in);
+                                            
+                                                private void consignar(){
+                                                    System.out.println("Ingrese su numero de identificacion de usuario: ");
+                                                    idUsuario = Integer.parseInt(leer.nextLine());
+                                            
+                                                    if( idUsuario  > clientes.length ){
+                                            
+                                                        System.out.println("Usuario no registrado");
+                                            
+                                                    }else {
+                                                        System.out.println("Usuario: " + clientes[idUsuario - 1]);
+                                                        System.out.println("Ingrese el valor a consignar: ");
+                                                        deposito = Integer.parseInt(leer.nextLine());
+                                                        if(deposito >0){
+                                                            nuevoSaldo = deposito + saldoUsuarios[idUsuario - 1];
+                                                            System.out.println("Nuevo saldo: $ "+ formatoMiles.format(nuevoSaldo));
+                                                        }else
+                                                            System.out.println("El valor no puede ser negativo");
+                                                    }
+                                                }
+                                            
+                                                private void retirar(){
+                                                    System.out.println("Ingresar su numero de identificaicon de usuario: ");
+                                                    idUsuario = Integer.parseInt(leer.nextLine());
+                                                    if( idUsuario  > clientes.length ){
+                                            
+                                                        System.out.println("Usuario no registrado");
+                                            
+                                                    }else {
+                                                        System.out.println("Usuario: " + clientes[idUsuario - 1]);
+                                                        System.out.println("Ingrese el valor a retirar: ");
+                                                        retiro = Integer.parseInt(leer.nextLine());
+                                                        if(retiro < saldoUsuarios[idUsuario-1]){
+                                                            nuevoSaldo = saldoUsuarios[idUsuario - 1] - retiro;
+                                                            System.out.println("Nuevo saldo: $ "+ formatoMiles.format(nuevoSaldo));
+                                                        }else
+                                                            System.out.println("No puede retirar un valor mayor a su saldo");
+                                                    }
+                                            
+                                                }
+                                            
+                                                public void p10(){
+                                            
+                                                    do {
+                                                        System.out.println("SU BANCO FIEL");
+                                                        System.out.println("Elija una opción: ");
+                                                        System.out.println("1. Retirar");
+                                                        System.out.println("2. Consignar");
+                                                        System.out.println("3. Salir");
+                                            
+                                                        opcion = Integer.parseInt(leer.nextLine());
+                                            
+                                                        switch (opcion){
+                                                            case 1:
+                                                                retirar();
+                                                                break;
+                                                            case 2:
+                                                                consignar();
+                                                                break;
+                                                            case 3:
+                                                                System.out.println("...Saliendo...");
+                                                                break;
+                                                            default:
+                                                                System.out.println("Opción incorrecta");
+                                                        }
+                                            
+                                                    }while (opcion !=3);
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="acordion-header" id="titulo4">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contenido4">
+                                Taller de ciclos
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="contenido4" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <p>
+                                <a href="#seccionColapsable14" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable14">
+                                    1. taller 3
+                                </a>
+                                <a href="#seccionColapsable24" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable24">
+                                    2. taller 3
+                                </a>
+                                <a href="#seccionColapsable34" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable34">
+                                    3. taller 3
+                                </a>
+                                <a href="#seccionColapsable44" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable44">
+                                    4. taller 3
+                                </a>
+                                <a href="#seccionColapsable54" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable54">
+                                    5. taller 3
+                                </a>
+                                <a href="#seccionColapsable64" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable64">
+                                    6. taller 3
+                                </a>
+                                 <a href="#seccionColapsable74" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable74">
+                                    7. taller 3
+                                </a>
+                                <a href="#seccionColapsable84" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable84">
+                                    8. taller 3
+                                </a>
+                            </p>
+                            <div class="collapse" id="seccionColapsable14">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>1. Realizar la siguiente figura por medio del ciclo Para</p>
+                                    <p>
+                                        *
+                                        **
+                                        ***
+                                        ****
+                                        *****
+                                        ******
+                                        *******
+                                        ********
+                                        *********
+                                        **********
+                                    </p>
+                                    <code>public class Ciclos1 {
+
+                                        int contador, espacios, contarEspacio;
+                                        String signo, tabular;
+                                    
+                                        public void p1(){
+                                            for(int i = 1; i < = 10; i++){
+                                                for (int j = 1; j < = i; j++){
+                                                    System.out.print("* ");
+                                                }
+                                                System.out.println(" ");
+                                            }
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable24">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>2. Realizar la siguiente figura por medio del ciclo Mientras - Hacer</p>
+                                    <p>
+                                                 *
+                                                **
+                                               ***
+                                              ****
+                                             *****
+                                            ******
+                                           *******
+                                          ********
+                                         *********
+                                        **********        
+                                    </p>
+                                    <code>    public void p2(){
+                                        for(int i=1; i <= 10; i++){
+                                            for (int j = 10; j >= i; j--){
+                                                System.out.print("* ");
+                                            }
+                                            System.out.println(" ");
+                                        }
+                                    }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable34">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>3. Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que</p>
+                                    <p>
+                                         *
+                                        ***
+                                       *****
+                                      *******
+                                     *********
+                                    ***********
+                                   *************
+                                  ***************
+                                 *****************
+                                *******************
+                               *********************
+                                        ***
+                                        ***
+                                       *****
+                                      *******  
+                                    </p>
+                                    <code>    public void p3(){
+
+                                        contador = 0;
+                                        signo = "*";
+                                        tabular = " ";
+                                        contarEspacio = 1;
+                                        espacios = 12;
+                                
+                                        System.out.println("              *");
+                                        for (int i =1; i<=12;i++){
+                                            while(contador <= i){
+                                                signo = signo + "*";
+                                                contador++;
+                                            }while(contarEspacio <= espacios){
+                                                tabular = tabular + " ";
+                                                contarEspacio = contarEspacio + 1;
+                                            }
+                                            System.out.println(tabular+signo);
+                                            contador--;
+                                            espacios--;
+                                            contarEspacio =1;
+                                            tabular = " ";
+                                        }
+                                        System.out.println("            *****       ");
+                                        System.out.println("             ***        ");
+                                        System.out.println("            *****       ");
+                                        System.out.println("           *******       ");
+                                    }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable44">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>4. Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:
+                                        1 x 5 = 5
+                                        2 x 5 = 10
+                                        3 x 5 = 15
+                                        4 x 5 = 20
+                                        5 x 5 = 25
+                                        6 x 5 = 30
+                                        7 x 5 = 35
+                                        8 x 5 = 40
+                                        9 x 5 = 45
+                                        10 x 5 = 50 
+
+                                    </p>
+                                    <code>import java.util.Scanner;
+
+                                        public class Ciclos4 {
+                                        
+                                            Scanner leer = new Scanner(System.in);
+                                            int numero, total;
+                                        
+                                            public void tabla(){
+                                                System.out.println("Ingrese un numero: ");
+                                                numero = leer.nextInt();
+                                                for (int i = 1; i <= 10; i++){
+                                                    total = i * numero;
+                                                    System.out.println(i+" x "+numero+ " = " +total );
+                                                }
+                                            }
+                                        
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable54">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>5. Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.
+                                        Menú de usuario
+                                        1. Captura nombre
+                                        2. Saludar persona
+                                        3. Salir del sistema</p>
+                                    <code>public class Ciclos5 {
+                                        int opcion;
+                                        String nombre;
+                                    
+                                        Scanner leer = new Scanner(System.in);
+                                    
+                                        public void menu(){
+                                            do {
+                                                System.out.println("Menú de usuario");
+                                                System.out.println("Elija una opción: ");
+                                                System.out.println("1. Capturar nombre");
+                                                System.out.println("2. Saludar persona");
+                                                System.out.println("3. Salir del sistema");
+                                    
+                                                opcion = Integer.parseInt(leer.nextLine());
+                                                switch (opcion){
+                                                    case 1:
+                                                        System.out.println("Ingrese un usuario: ");
+                                                        nombre = leer.nextLine();
+                                                        break;
+                                                    case 2:
+                                                        if(nombre == ""){
+                                                            System.out.println("No hay a quien saludar, ingrese un nombre");
+                                                        }else
+                                                            System.out.println("Hola, "+nombre+ " ¿como estas?");
+                                                        break;
+                                                    case 3:
+                                                        System.out.println("...Saliendo...");
+                                                        break;
+                                                    default:
+                                                        System.out.println("Opcion incorrecta");
+                                                }
+                                            }while(opcion !=3);
+                                        }
+                                    }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable64">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>6. Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo.<br> Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando<br> que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar<br> cuando el usuario así lo indique.</p>
+                                    <code>import java.util.ArrayList;
+                                        import java.util.List;
+                                        import java.util.Scanner;
+                                        
+                                        public class Ciclos6 {
+                                        
+                                            Scanner leer = new Scanner(System.in);
+                                            List nombres = new ArrayList();
+                                            List telefonos = new ArrayList();
+                                            List organizacion = new ArrayList();
+                                            String buscarUsuario;
+                                            int posicion, opcion;
+                                        
+                                            private void almacenarUsuario(){
+                                                System.out.println("Ingrese el nombre del usuairo: ");
+                                                nombres.add(leer.nextLine());
+                                        
+                                                System.out.println("Ingrese el numero de telefono del usuario: ");
+                                                telefonos.add(leer.nextLine());
+                                        
+                                                System.out.println("Ingrese la organización: ");
+                                                organizacion.add(leer.nextLine());
+                                            }
+                                        
+                                            private void buscandoUsario(){
+                                                System.out.println("Ingrese el usuario a buscar: ");
+                                                buscarUsuario = leer.nextLine();
+                                                posicion = nombres.indexOf(buscarUsuario);
+                                                if(posicion >= 0){
+                                                    System.out.println("El usuario: "+ buscarUsuario +" se encuentra registrado");
+                                                    System.out.println("Número telefonico: "+telefonos.get(posicion)+"\nOrganización: "+organizacion.get(posicion));
+                                                    System.out.println("********************************");
+                                                }else{
+                                                    System.out.println("El elemento "+ buscarUsuario+ " no está en la lista");
+                                                }
+                                            }
+                                        
+                                            private void eliminandoUsuario(){
+                                                System.out.println("Ingrese el usuario a eliminar: ");
+                                                buscarUsuario = leer.nextLine();
+                                                posicion = nombres.indexOf(buscarUsuario);
+                                                if(posicion >=0){
+                                                    nombres.remove(posicion);
+                                                    telefonos.remove(posicion);
+                                                    organizacion.remove(posicion);
+                                                    System.out.println("...Usuario eliminado...");
+                                                }else{
+                                                    System.out.println("El elemento "+ buscarUsuario+ " no está en la lista");
+                                                }
+                                            }
+                                        
+                                        
+                                            public void aplicacion(){
+                                        
+                                                do {
+                                                    System.out.println("Seleccione una opcion: ");
+                                                    System.out.println("1. Almacenar contacto");
+                                                    System.out.println("2. Buscar contacto");
+                                                    System.out.println("3. Eliminar contacto");
+                                                    System.out.println("4. Salir");
+                                        
+                                                    opcion = Integer.parseInt(leer.nextLine());
+                                        
+                                                    switch (opcion){
+                                                        case 1:
+                                                            almacenarUsuario();
+                                                            break;
+                                                        case 2:
+                                                            buscandoUsario();
+                                                            break;
+                                                        case 3:
+                                                            eliminandoUsuario();
+                                                            break;
+                                                        case 4:
+                                                            System.out.println("...saliendo...");
+                                                            break;
+                                                        default:
+                                                            System.out.println("Opcion incorrecta, favor verificar");
+                                        
+                                                    }
+                                        
+                                                }while(opcion !=4);
+                                        
+                                        
+                                        
+                                            }
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable74">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>7. El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita<br>registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca,<br> y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero,<br> retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo <br>indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.</p>
+                                    <code>import java.util.ArrayList;
+                                        import java.util.List;
+                                        import java.util.Scanner;
+                                        
+                                        public class Ciclos7 {
+                                            List placasVehiculos = new ArrayList<>(4);
+                                            List marcaVehiculos = new ArrayList<>(4);
+                                            List nombreCompleto = new ArrayList();
+                                            List telefeno = new ArrayList();
+                                            Scanner leer = new Scanner(System.in);
+                                            String placa, marca, nombre, numeroTelefono, buscarVechiculo;
+                                            int opcion, posicion, contar;
+                                        
+                                            private void ingresarVeciculo(){
+                                                System.out.println("Ingrese la placa del vehiculo: ");
+                                                placa = leer.nextLine();
+                                                placasVehiculos.add(placa);
+                                        
+                                                System.out.println("Ingrese la marca del vehiculo: ");
+                                                marca = leer.nextLine();
+                                                marcaVehiculos.add(marca);
+                                        
+                                                System.out.println("Ingrese el nombre completo del propietario: ");
+                                                nombre = leer.nextLine();
+                                                nombreCompleto.add(nombre);
+                                        
+                                                System.out.println("Ingrese el numero telefonico del propietario: ");
+                                                numeroTelefono = leer.nextLine();
+                                                telefeno.add(numeroTelefono);
+                                            }
+                                        
+                                            private void buscarVechiculo(){
+                                                System.out.println("Ingrese el vechiculo a buscar: ");
+                                                buscarVechiculo = leer.nextLine();
+                                                posicion = placasVehiculos.indexOf(buscarVechiculo);
+                                                if(posicion >= 0){
+                                                    System.out.println("El Vehiculo: "+ buscarVechiculo +" de la marca: "+marcaVehiculos.get(posicion) +" se encuentra en el parqueadero");
+                                                    System.out.println("Nombre de propietario: "+nombreCompleto.get(posicion)+"\nOrganización: "+telefeno.get(posicion));
+                                                    System.out.println("********************************");
+                                                }else{
+                                                    System.out.println("El elemento "+ buscarVechiculo+ " no está en la lista");
+                                                }
+                                            }
+                                        
+                                            private void retirarVechiculo(){
+                                                System.out.println("Ingrese el vechiculo a retirar: ");
+                                                buscarVechiculo = leer.nextLine();
+                                                posicion = placasVehiculos.indexOf(buscarVechiculo);
+                                                if(posicion >= 0){
+                                                    placasVehiculos.remove(posicion);
+                                                    marcaVehiculos.remove(posicion);
+                                                    nombreCompleto.remove(posicion);
+                                                    telefeno.remove(posicion);
+                                                }else{
+                                                    System.out.println("El vehiculo "+ buscarVechiculo+ " no está en el parqueadero");
+                                                }
+                                            }
+                                        
+                                            public void parqueadero(){
+                                        
+                                                do {
+                                                    System.out.println("Capacidad de vehiculos en el parquedero: "+(5-contar));
+                                                    System.out.println("Elija la opción a realizar:  ");
+                                                    System.out.println("1. Ingresar Vehiculo");
+                                                    System.out.println("2. Retirar vehiculo");
+                                                    System.out.println("3. Consultar vehiculo");
+                                                    System.out.println("4. salir");
+                                                    opcion = Integer.parseInt(leer.nextLine());
+                                        
+                                                    switch (opcion){
+                                                        case 1:
+                                                            contar++;
+                                                            if(contar < 6){
+                                                                ingresarVeciculo();
+                                                            }else
+                                                                System.out.println("El parquedero está lleno");
+                                                            break;
+                                                        case 2:
+                                                            contar--;
+                                                            if(contar < 0){
+                                                                System.out.println("El parqueadero no tiene vehiculos para retirar");
+                                                            }else
+                                                                retirarVechiculo();
+                                                            break;
+                                                        case 3:
+                                                            buscarVechiculo();
+                                                            break;
+                                                        case 4:
+                                                            System.out.println("...Saliendo...");
+                                                            break;
+                                                        default:
+                                                            System.out.println("Opción incorrecta, por favor verifique su selección");
+                                        
+                                                    }
+                                                }while(opcion!=4);
+                                        
+                                            }
+                                        }
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable84">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>8. La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y<br> establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su<br> ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el<br> sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.</p>
+                                    <code>import java.util.ArrayList;
+                                        import java.util.List;
+                                        import java.util.Scanner;
+                                        
+                                        public class Ciclos8 {
+                                        
+                                            List nombreAlumno = new ArrayList<>();
+                                            List notaAlumno = new ArrayList();
+                                            String nombre, buscarAlumno;
+                                            Scanner leer = new Scanner(System.in);
+                                            int opcion, posicion, nota;
+                                        
+                                        
+                                            private void registraAlumno(){
+                                                System.out.println("Ingrese el nombre del alumno: ");
+                                                nombre = leer.nextLine();
+                                                nombreAlumno.add(nombre);
+                                        
+                                                System.out.println("Ingrese la nota: ");
+                                                System.out.println("1. Aprobado \n2. Reprobado");
+                                                nota = Integer.parseInt(leer.nextLine());
+                                                switch (nota){
+                                                    case 1:
+                                                        notaAlumno.add("Aprobado");
+                                                        break;
+                                                    case 2:
+                                                        notaAlumno.add("Reprobado");
+                                                        break;
+                                                    default:
+                                                        System.out.println("Opcion incorrecta");
+                                                }
+                                            }
+                                        
+                                            private void buscarAlumno(){
+                                                System.out.println("Ingrese el alumno a buscar: ");
+                                                buscarAlumno = leer.nextLine();
+                                                posicion = nombreAlumno.indexOf(buscarAlumno);
+                                                if(posicion >= 0){
+                                                    System.out.println("El alumno: "+ buscarAlumno + "se encuentra matriculado");
+                                                    System.out.println("Nota del alumno: "+notaAlumno.get(posicion));
+                                                    System.out.println("********************************");
+                                                }else{
+                                                    System.out.println("El alumno "+ buscarAlumno+ " no está en la lista");
+                                                }
+                                            }
+                                        
+                                            public void escuela(){
+                                                System.out.println("Escuela automovilistica el Maestro");
+                                                System.out.println("**********************************");
+                                        
+                                                do {
+                                        
+                                                    System.out.println("1. Registrar alumno");
+                                                    System.out.println("2. Consultar alumno");
+                                                    System.out.println("3. Salir");
+                                        
+                                                    opcion = Integer.parseInt(leer.nextLine());
+                                        
+                                                    switch (opcion){
+                                                        case 1:
+                                                            registraAlumno();
+                                                            break;
+                                                        case 2:
+                                                            buscarAlumno();
+                                                            break;
+                                                        case 3:
+                                                            System.out.println("...saliendo...");
+                                                            break;
+                                                        default:
+                                                            System.out.println("Opción incorrecta");
+                                                    }
+                                        
+                                                }while (opcion !=3);
+                                            }
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="acordion-header" id="titulo5">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contenido5">
+                                Taller de Arreglos
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="contenido5" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <p>
+                                <a href="#seccionColapsable15" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable15">
+                                    1. taller 3
+                                </a>
+                                <a href="#seccionColapsable25" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable25">
+                                    2. taller 3
+                                </a>
+                                <a href="#seccionColapsable35" class="btn btn-primary" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="#seccionColapsable35">
+                                    3. taller 3
+                                </a>
+                                <a href="#seccionColapsable45" class="btn btn-primary" data-bs-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="#seccionColapsable45">
+                                   4. taller 3
+                                </a>
+                                <a href="#seccionColapsable55" class="btn btn-primary" data-bs-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="#seccionColapsable55">
+                                    5. taller 3
+                                </a>
+                               
+                                
+                            </p>
+                            <div class="collapse" id="seccionColapsable15">
+                                <div class="card card-body">
+                                    <pre>
+                                    <p>1. Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuario. Después de recoger toda la información, se requiere<br> imprimir el índice de cada posición en el arreglo con su valor de la siguiente manera:
+                                        o	[0] = 55
+                                        o	[1] = 99
+                                        o	[2] = 11
+                                        o	[3] = 56
+                                        o	[4] = 69</p>
+                                        <code>import java.util.Random;
+
+                                            public class Arreglos1 {
+                                                int vector[] = {55, 99, 11, 56, 69};
+                                                Random randomico = new Random(100);
+                                                int vector2[] = new int[20];
+                                                int vectorPar[] = new int[20];
+                                                int vectorImpar[] = new int[20];
+                                                int j;
+                                                int k;
+                                                public void arreglos1(){
+                                                    for(int i =0; i < vector.length; i++){
+                                                        System.out.println("[ "+i+" ] = "+vector[i]);
+                                                    }
+                                                }</code>
+                                    </pre>
+                                </div>
+                            </div>
+
+    
+                            <div class="collapse" id="seccionColapsable25">
+                                <div class="card card-body">
+                                    <pre>
+                                        <p>2. Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho<br> arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. Ejemplo: 
+                                            o	Números pares: 2, 4, 6, 8, 10
+                                            o	Números impares: 1, 3, 5, 7, 9</p>
+                                        <code>    public void arreglos2(){
+                                            System.out.println("Vector original: ");
+                                            for (int i =0;i < 20;i++){
+                                                vector2[i]=(randomico.nextInt(1,100));
+                                                System.out.print(vector2[i]+" ");
+                                            }
+                                            System.out.println();
+                                    
+                                            System.out.println("Vector par: ");
+                                    
+                                            while(j < 20){
+                                                if(vector2[j] % 2 == 0){
+                                                    vectorPar[j] = vector2[j];
+                                                    System.out.print(vectorPar[j] + " ");
+                                                }
+                                                j++;
+                                            }
+                                            System.out.println();
+                                    
+                                            System.out.println("Vector impar: ");
+                                            while(k < 20){
+                                                if(vector2[k] % 2 == 1){
+                                                    vectorImpar[k] = vector2[k];
+                                                    System.out.print(vectorImpar[k]+" ");
+                                                }
+                                                k++;
+                                            }
+                                            System.out.println();
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="seccionColapsable35">
+                                <div class="card card-body">
+                                    <pre>
+                                        <p>3. Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.</p>
+                                        <code>public class Arreglos3 {
+                                            int contar;
+                                        
+                                        
+                                            public void arreglos3(){
+                                                System.out.println("Los numeros primos del 1 al 1000 son: ");
+                                                for(int i =1; i<=1000;i++){
+                                                    contar =0;
+                                                    for (int j = 1; j<=i;j++){
+                                                        if(i%j ==0){
+                                                            contar++;
+                                                        }
+                                                    }
+                                                    if(contar == 2){
+                                                        System.out.println(i);
+                                                    }
+                                                }
+                                            }
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="collapse" id="seccionColapsable45">
+                                <div class="card card-body">
+                                    <pre>
+                                        <p>4. Dada la siguiente matriz bidimensional, el cual debe de quemar en el código:
+
+                                            o	01 02 03 04 05
+                                            o	06 07 08 09 10
+                                            o	11 12 13 14 15
+                                            o	16 17 18 19 20
+            
+                                            o Utilizando el conocimiento adquirido, a excepción de hacerlo de forma manual, imprima la siguiente matriz bidimensional.
+            
+                                            o	01 02 03 04 05
+                                            o	10 09 08 07 06
+                                            o	11 12 13 14 15
+                                            o	20 19 18 17 16</p>
+                                        <code>public class Arreglos4 {
+                                            String matriz [][] = new String[4][5];
+                                        
+                                            public void p4(){
+                                                matriz[0][0] = "01";
+                                                matriz[0][1] = "02";
+                                                matriz[0][2] = "03";
+                                                matriz[0][3] = "04";
+                                                matriz[0][4] = "05";
+                                                matriz[1][0] = "06";
+                                                matriz[1][1] = "07";
+                                                matriz[1][2] = "08";
+                                                matriz[1][3] = "09";
+                                                matriz[1][4] = "10";
+                                                matriz[2][0] = "11";
+                                                matriz[2][1] = "12";
+                                                matriz[2][2] = "13";
+                                                matriz[2][3] = "14";
+                                                matriz[2][4] = "15";
+                                                matriz[3][0] = "16";
+                                                matriz[3][1] = "17";
+                                                matriz[3][2] = "18";
+                                                matriz[3][3] = "19";
+                                                matriz[3][4] = "20";
+                                        
+                                                System.out.println("Pimera Matriz: ");
+                                        
+                                                for(int i = 0 ; i <= 3 ; i++) {
+                                                    for (int j = 0; j <= 4; j++) {
+                                                        System.out.print(matriz[i][j]+" ");
+                                                    }
+                                                    System.out.println();
+                                                }
+                                        
+                                                System.out.println();
+                                                System.out.println("Segunda Matriz: ");
+                                                for(int i = 0; i <= 3; i++){
+                                                    if(i % 2 == 0){
+                                                        for (int j = 0; j <= 4; j++){
+                                                            System.out.print(matriz[i][j]+" ");
+                                                            System.out.print("");
+                                                        }
+                                                    }else
+                                                        for (int k = 4; k >= 0; k--){
+                                                            System.out.print(matriz[i][k]+" ");
+                                                            System.out.print("");
+                                                        }
+                                                }
+                                        
+                                            }
+                                        }</code>
+                                    </pre>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="seccionColapsable55">
+                                <div class="card card-body">
+                                    <pre>
+                                        <p>5.	Se debe de imprimir el siguiente cuadro:
+                                            <figure><img src="img/matrizTablas.png"></figure>
+                                        </p>
+                                        <p>• El usuario deberá insertar la fila y columna de la cual desea ver el resultado, el resultado de cada celda debe estar previamente calculado en una<br> matriz bidimensional la cual cada resultado obedecerá a la fila y columna insertada por el usuario.</p>
+                                        <code>import java.util.Scanner;
+
+                                            public class Arreglos5 {
+                                                int matriz [][] = new int[10][10];
+                                                int opcion, numero1, numero2, resultado;
+                                                Scanner leer = new Scanner(System.in);
+                                            
+                                                public void multiplicar(){
+                                                    System.out.println("Ingrese numero 1: ");
+                                                    numero1 = Integer.parseInt(leer.nextLine());
+                                            
+                                                    System.out.println("Ingrese el numero 2: ");
+                                                    numero2 = Integer.parseInt(leer.nextLine());
+                                            
+                                                    resultado = matriz[numero1][numero2];
+                                                    System.out.println(resultado);
+                                                }
+                                            
+                                                private void llenarMatriz(){
+                                                    for(int i = 1; i<=10;i++ ){
+                                                        for (int j = 1; j<= 10; j++){
+                                                            matriz[i-1][j-1] = i*j;
+                                                            System.out.print(i + " * "+j+" = "+matriz[i-1][j-1]+" ");
+                                                        }
+                                                        System.out.println();
+                                            
+                                            
+                                                    }
+                                                    System.out.println("Ingrese numero 1: ");
+                                                    numero1 = Integer.parseInt(leer.nextLine());
+                                            
+                                                    System.out.println("Ingrese el numero 2: ");
+                                                    numero2 = Integer.parseInt(leer.nextLine());
+                                            
+                                                    resultado = matriz[numero1-1][numero2-1];
+                                                    System.out.println(resultado);
+                                                }
+                                            
+                                            
+                                                public void p5(){
+                                                    do {
+                                                        System.out.println("Elija una opcion: ");
+                                                        System.out.println("1. Elegir dos numeros del 1 al 10");
+                                                        System.out.println("2. Salir");
+                                            
+                                                        opcion = Integer.parseInt(leer.nextLine());
+                                            
+                                                        switch (opcion){
+                                                            case 1:
+                                                                llenarMatriz();
+                                                                break;
+                                                            case 2:
+                                                                System.out.println("...Saliendo...");
+                                                                break;
+                                                            default:
+                                                                System.out.println("Opcion incorrecta");
+                                                        }
+                                                    }while (opcion !=2);
+                                            
+                                                }
+                                            }</code>
+                                    </pre>
+                                </div>
+                            </div>
+            </section>
+
+    <footer class="container-fluid fixed-buttom bg-dark text-white">
+        <p>Talleres Java</p>
+    </footer>
+</body>
+</html>

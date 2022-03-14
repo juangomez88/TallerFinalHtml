@@ -1,0 +1,42 @@
+.jumbotron{
+    background-color: aliceblue;
+    background-image: url(../img/fondo-banner.jpg);
+    color: white;
+    font-family: fantasy;
+}
+
+#irA :hover{
+    filter: sepia(40%);
+}
+
+p{
+    text-align: justify;
+}
+
+#contenido1 {
+ text-align: start;   
+}
+
+#contenido2 {
+    text-align: start;   
+   }
+
+#contenido3 {
+    text-align: start;   
+}
+
+#contenido4 {
+    text-align: start;
+}
+
+#contenido5 {
+    text-align: start;
+}
+
+h6{
+    font-style: italic;
+}
+
+#listHtml{
+text-align: start;
+}
